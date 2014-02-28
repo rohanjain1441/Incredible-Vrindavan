@@ -1,0 +1,18 @@
+if(vis==15)
+{
+vis=5;
+}
+
+if(vis==1)
+{
+vis=6;
+}
+
+if(vis<=5 && vis>=2)
+{
+vis--;
+}
+if(vis>=6 && vis<=14)
+{
+vis++;
+}

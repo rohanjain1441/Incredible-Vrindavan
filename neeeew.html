@@ -1,0 +1,668 @@
+<html>
+<head>
+
+
+<style type="text/css">
+
+.fonts
+{
+font-family:Papyrus;
+font-size:13;
+font-color:black;
+position:absolute;
+top:70px;
+left:110px;
+}
+
+.a1
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:100px;
+top:150px;
+}
+
+.a2
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:900px;
+top:150px;
+}
+
+
+.a3
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:1700px;
+top:150px;
+}
+
+.a4
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:2500px;
+top:150px;
+}
+
+.a5
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:3300px;
+top:150px;
+}
+
+.a6
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:4100px;
+top:150px;
+}
+
+.a7
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:4900px;
+top:150px;
+}
+
+.a8
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:5700px;
+top:150px;
+}
+
+.a9
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:6500px;
+top:150px;
+}
+
+.a10
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:7300px;
+top:150px;
+}
+
+.a11
+{
+background:url(boxf.gif);
+position:absolute;
+width:500px;
+height:500px;
+opacity:0.4;
+left:8100px;
+top:150px;
+}
+
+.imaginary
+{
+background:url(box.gif);
+position:absolute;
+width:500px;
+height:500px;
+visibility:hidden;
+left:8600px;
+top:50px;
+}
+
+    
+
+body
+{
+background-image:url(bg.jpg);
+background-attachment:fixed;
+}
+</style>
+
+<script language="Javascript">
+p=0;
+cant=0;
+function enlarge(no)
+{
+
+
+
+
+
+
+if(no==1)
+{
+
+im1vis.src=im1.src;
+im1vis.style.visibility="visible";
+
+im1vis.style.pixelWidth=p+100;
+im1vis.style.pixelHeight=p;
+
+
+p=p+5;
+
+if(p>300)
+{
+p=0;
+}
+else
+setTimeout("enlarge(1)",10);
+}
+
+
+if(no==2)
+{
+
+im2vis.src=im2.src;
+im2vis.style.visibility="visible";
+
+im2vis.style.pixelWidth=p;
+im2vis.style.pixelHeight=p+80;
+
+
+p=p+5;
+
+if(p>300)
+{
+p=0;
+}
+else
+setTimeout("enlarge(2)",10);
+}
+
+   
+}
+
+
+
+
+
+
+
+
+
+function shrink(num)
+{
+
+if(num==1)
+{
+
+
+im1vis.style.visibility="hidden";
+}
+if(num==2)
+{
+
+
+im2vis.style.visibility="hidden";
+}
+}
+
+
+
+sum=0;
+i=1;
+function clik(cant)
+{
+ 
+  if(cant==1)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==550)
+     {
+      document.body.scrollLeft=550;
+       
+     }
+     else
+    { 
+       setTimeout('clik(1)','0.1');
+      
+     }
+  }
+
+if(cant==2)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==1300)
+     {
+      document.body.scrollLeft=1300;
+       
+     }
+     else
+    { 
+       setTimeout('clik(2)','0.1');
+      
+     }
+  }
+
+
+
+
+if(cant==3)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==2100)
+     {
+      document.body.scrollLeft=2100;
+       
+     }
+     else
+    { 
+       setTimeout('clik(3)','0.1');
+      
+     }
+  }
+
+
+if(cant==4)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==2900)
+     {
+      document.body.scrollLeft=2900;
+       
+     }
+     else
+    { 
+       setTimeout('clik(4)','0.1');
+      
+     }
+  }
+
+
+if(cant==5)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==3700)
+     {
+      document.body.scrollLeft=3700;
+       
+     }
+     else
+    { 
+       setTimeout('clik(5)','0.1');
+      
+     }
+  }
+
+if(cant==6)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==4500)
+     {
+      document.body.scrollLeft=4500;
+       
+     }
+     else
+    { 
+       setTimeout('clik(6)','0.1');
+      
+     }
+  }
+
+if(cant==7)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==5300)
+     {
+      document.body.scrollLeft=5300;
+       
+     }
+     else
+    { 
+       setTimeout('clik(7)','0.1');
+      
+     }
+  }
+
+if(cant==8)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==6100)
+     {
+      document.body.scrollLeft=6100;
+       
+     }
+     else
+    { 
+       setTimeout('clik(8)','0.1');
+      
+     }
+  }
+
+if(cant==9)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==6900)
+     {
+      document.body.scrollLeft=6900;
+       
+     }
+     else
+    { 
+       setTimeout('clik(9)','0.1');
+      
+     }
+  }
+
+if(cant==10)
+  {
+    document.body.scrollLeft=sum;
+    sum=sum+5;
+   
+     if(sum==7700)
+     {
+      document.body.scrollLeft=7700;
+       
+     }
+     else
+    { 
+       setTimeout('clik(10)','0.1');
+      
+     }
+  }
+
+
+  
+ 
+}
+function clikl(cant)
+{
+ if(cant==0)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==0)
+   {
+     document.body.scrollLeft=0;
+	
+   }
+   else
+   {
+     setTimeout('clikl(0)','0.1');
+   }
+ }
+
+
+if(cant==1)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==550)
+   {
+     document.body.scrollLeft=550;
+	
+   }
+   else
+   {
+     setTimeout('clikl(1)','0.1');
+   }
+ }
+
+
+if(cant==2)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==1300)
+   {
+     document.body.scrollLeft=1300;
+	
+   }
+   else
+   {
+     setTimeout('clikl(2)','0.1');
+   }
+ }
+
+if(cant==3)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==2100)
+   {
+     document.body.scrollLeft=2100;
+	
+   }
+   else
+   {
+     setTimeout('clikl(3)','0.1');
+   }
+ }
+
+if(cant==4)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==2900)
+   {
+     document.body.scrollLeft=2900;
+	
+   }
+   else
+   {
+     setTimeout('clikl(4)','0.1');
+   }
+ }
+
+if(cant==5)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==3700)
+   {
+     document.body.scrollLeft=3700;
+	
+   }
+   else
+   {
+     setTimeout('clikl(5)','0.1');
+   }
+ }
+
+if(cant==6)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==4500)
+   {
+     document.body.scrollLeft=4500;
+	
+   }
+   else
+   {
+     setTimeout('clikl(6)','0.1');
+   }
+ }
+
+if(cant==7)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==5300)
+   {
+     document.body.scrollLeft=5300;
+	
+   }
+   else
+   {
+     setTimeout('clikl(7)','0.1');
+   }
+ }
+
+if(cant==8)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==6100)
+   {
+     document.body.scrollLeft=6100;
+	
+   }
+   else
+   {
+     setTimeout('clikl(8)','0.1');
+   }
+ }
+
+if(cant==9)
+ {
+   document.body.scrollLeft=sum;
+   sum=sum-5;
+   
+   if(sum==6900)
+   {
+     document.body.scrollLeft=6900;
+	
+   }
+   else
+   {
+     setTimeout('clikl(9)','0.1');
+   }
+ }
+
+
+}
+
+
+document.addEventListener('keydown',function (e)
+{
+   switch(e.keyCode)
+   {
+      case 39:
+ 
+cant++;
+if(cant==11)
+{
+cant=10;
+}
+else
+{
+
+clik(cant);
+}
+                break;
+      case 37: 
+cant--;
+if(cant==-1)
+{
+cant=0;
+}
+else
+{
+
+clikl(cant);
+}
+                break;
+   }
+   
+},true);
+
+      
+      
+   
+</script>
+</head>
+<body scroll="no">
+<img id="im1vis" src="5.gif" style="visibility:hidden; position:absolute; TOP:220px; LEFT:550px; WIDTH:50px; HEIGHT:50px";>
+<img id="im2vis" src="5.gif" style="visibility:hidden; position:absolute; TOP:220px; LEFT:600px; WIDTH:50px; HEIGHT:50px";>
+<div class="a1">
+<b><pre class="fonts">
+           AN INTRODUCTION
+  
+    Vrindavan is considered to be a holy 
+place by all traditions of Hinduism.The 
+major tradition followed in the area is 
+Vaisnavism,and it is a center of learning 
+with many Vrindavan Ashrams operating.Its 
+a center of Krishna worship and the area 
+includes places like Govardhana and Gokul 
+that are associated with Krishna.
+
+  <img id="im1" style="position:absolute; WIDTH:120px; HEIGHT:90px;" src="vrindavan.jpg" onMouseover="enlarge(1)" onMouseout="shrink(1)"></img>                                       <img id="im2" style="position:absolute; WIDTH:85px; HEIGHT:100px;" src="bnke.jpg" onMouseover="enlarge(2)" onMouseout="shrink(2)"></img>
+                         
+
+
+
+    Lord Krishna            Banke Bihariji                                                                                                                                                                                        
+</pre></b></div>
+<div class="a2"></div>
+<div class="a3"></div>
+<div class="a4"></div>
+<div class="a5"></div>
+<div class="a6"></div>
+<div class="a7"></div>
+<div class="a8"></div>
+<div class="a9"></div>
+<div class="a10"></div>
+<div class="a11"></div>
+<div class="imaginary"></div>
+
+</body>
+</html>
+

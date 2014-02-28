@@ -1,0 +1,27 @@
+<script type="text/javascript">
+
+var xAngle = 0, yAngle = 0;
+        document.addEventListener('keydown', function(e)
+        {
+                switch(e.keyCode)
+                {
+
+                        case 37: // left
+                                img1.src=untitled.bmp;
+                                break;
+
+                        case 38: // up
+                                img1.src=untitled-1.bmp;
+                                break;
+
+                        case 39: // right
+                                img1.src=untitled-7771.gif;
+                                break;
+
+                        case 40: // down
+                                xAngle -= 90;
+                                break;
+                };
+
+          },false);
+

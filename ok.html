@@ -1,0 +1,509 @@
+<html>
+<head>
+<title>
+Main Page
+</title>
+<style type="text/css">
+a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:none;}
+a:active {text-decoration:none;}
+body
+{
+background-image:url('bg.jpg');
+}
+.colored
+{
+font-family:Harrington;
+font-style:bold;
+font-size:21px;
+color:#FF0000;
+cursor:hand;
+}
+.notcolored
+{
+font-family:Harrington;
+font-style:bold;
+font-size:21px;
+color:#FFFFFF;
+cursor:hand;
+}
+.bar
+{
+cursor:hand;
+border:0px;
+opacity:0.6;
+width:252px;
+height:57px;
+left:420px;
+background:url(btab.gif);
+visibility:hidden;
+}
+.vbar
+{
+cursor:hand;
+border:0px;
+opacity:0.6;
+width:252px;
+height:57px;
+left:450px;
+background:url(btab.gif);
+visibility:visible;
+}
+.cvbar
+{
+cursor:hand;
+border:0px;
+opacity:0.6;
+width:252px;
+height:57px;
+left:450px;
+background:url(redtab1.gif);
+visibility:visible;
+}
+
+.ntvisible
+{
+visibility:hidden;
+}
+.mkevisible
+{
+visibility:visible;
+}
+</style>
+<script language="Javascript">
+i=1; j=1;
+function changeit(pi,di)
+{
+   document.getElementById(pi).className="colored";
+   document.getElementById(di).className="cvbar";
+}
+function btn(pi,di)
+{
+   document.getElementById(pi).className="notcolored";
+   document.getElementById(di).className="vbar";
+}
+function large(k)
+{
+ 
+ for(b=1;b<=5;b++)
+ { 
+   if(b==k)
+   {
+     switch(k)
+ {
+   case 1:document.getElementById("b1").className="vbar";
+          document.getElementById("b2").className="vbar";
+          break;
+
+   case 2:document.getElementById("h1").className="vbar";
+          document.getElementById("h2").className="vbar";
+          document.getElementById("h3").className="vbar";
+          break;
+                                                                     
+   case 3:document.getElementById("sc1").className="vbar";
+          document.getElementById("sc2").className="vbar";
+          break;
+   case 4:document.getElementById("t1").className="vbar";
+          document.getElementById("t2").className="vbar";
+          break;
+   case 5:document.getElementById("tr1").className="vbar";
+          document.getElementById("tr2").className="vbar";
+          document.getElementById("tr3").className="vbar";
+          break;
+   default:break;
+ }
+     s="img"+b;
+    n="im"+b;
+    
+    if(b==4)
+    {
+     document.getElementById(s).style.opacity=1;
+    document.getElementById(s).width=200;
+    document.getElementById(s).height=200;
+    document.getElementById(n).className="mkevisible";
+    }  
+    else
+    {
+    document.getElementById(s).style.opacity=1;
+    document.getElementById(s).width=250;
+    document.getElementById(s).height=250;
+    document.getElementById(n).className="mkevisible";
+    }
+    }
+    else
+    {
+     switch(b)
+   {
+    case 1:document.getElementById("b1").className="bar";
+           document.getElementById("b2").className="bar";
+           break;
+
+    case 2:document.getElementById("h1").className="bar";
+           document.getElementById("h2").className="bar";
+           document.getElementById("h3").className="bar";
+           break;
+
+    case 3:document.getElementById("sc1").className="bar";
+           document.getElementById("sc2").className="bar";
+           break;
+
+    case 4:document.getElementById("t1").className="bar";
+           document.getElementById("t2").className="bar";
+           break;
+    case 5:document.getElementById("tr1").className="bar";
+           document.getElementById("tr2").className="bar";
+           document.getElementById("tr3").className="bar";
+         break;
+     default:break;
+   }
+    s="img"+b;
+    n="im"+b;
+    document.getElementById(s).style.opacity=0.4;
+    document.getElementById(s).height=150;
+    document.getElementById(s).width=150;
+    document.getElementById(n).className="ntvisible";
+    }  
+  }
+}
+function doit(i,j)
+{
+   switch(i)
+   {
+      case 1: s="bp"+j;
+              s1="b"+j;
+              document.getElementById("bp1").className="notcolored";
+              document.getElementById("bp2").className="notcolored";
+              document.getElementById("hp1").className="notcolored";
+              document.getElementById("hp2").className="notcolored";
+              document.getElementById("hp3").className="notcolored";
+              document.getElementById("scp1").className="notcolored";
+              document.getElementById("scp2").className="notcolored";
+              document.getElementById("tp1").className="notcolored";
+              document.getElementById("tp2").className="notcolored";
+              document.getElementById("trp1").className="notcolored";
+              document.getElementById("trp2").className="notcolored";
+              document.getElementById("trp3").className="notcolored";
+           document.getElementById("b1").className="vbar";
+           document.getElementById("b2").className="vbar";
+	   document.getElementById("h1").className="bar";
+           document.getElementById("h2").className="bar";
+           document.getElementById("h3").className="bar";
+	   document.getElementById("sc1").className="bar";
+           document.getElementById("sc2").className="bar";
+	   document.getElementById("t1").className="bar";
+           document.getElementById("t2").className="bar";
+	   document.getElementById("tr1").className="bar";
+           document.getElementById("tr2").className="bar";
+           document.getElementById("tr3").className="bar";
+              document.getElementById(s).className="colored";
+              document.getElementById(s1).className="cvbar";
+              break;
+      case 2: s="hp"+j;
+              s1="h"+j;
+              document.getElementById("bp1").className="notcolored";
+              document.getElementById("bp2").className="notcolored";
+              document.getElementById("hp1").className="notcolored";
+              document.getElementById("hp2").className="notcolored";
+              document.getElementById("hp3").className="notcolored";
+              document.getElementById("scp1").className="notcolored";
+              document.getElementById("scp2").className="notcolored";
+              document.getElementById("tp1").className="notcolored";
+              document.getElementById("tp2").className="notcolored";
+              document.getElementById("trp1").className="notcolored";
+              document.getElementById("trp2").className="notcolored";
+              document.getElementById("trp3").className="notcolored";
+           document.getElementById("b1").className="bar";
+           document.getElementById("b2").className="bar";
+	   document.getElementById("h1").className="vbar";
+           document.getElementById("h2").className="vbar";
+           document.getElementById("h3").className="vbar";
+	   document.getElementById("sc1").className="bar";
+           document.getElementById("sc2").className="bar";
+	   document.getElementById("t1").className="bar";
+           document.getElementById("t2").className="bar";
+	   document.getElementById("tr1").className="bar";
+           document.getElementById("tr2").className="bar";
+           document.getElementById("tr3").className="bar";
+              document.getElementById(s).className="colored";
+              document.getElementById(s1).className="cvbar";
+              break;
+      case 3: s="scp"+j;
+              s1="sc"+j;
+              document.getElementById("bp1").className="notcolored";
+              document.getElementById("bp2").className="notcolored";
+              document.getElementById("hp1").className="notcolored";
+              document.getElementById("hp2").className="notcolored";
+              document.getElementById("hp3").className="notcolored";
+              document.getElementById("scp1").className="notcolored";
+              document.getElementById("scp2").className="notcolored";
+              document.getElementById("tp1").className="notcolored";
+              document.getElementById("tp2").className="notcolored";
+              document.getElementById("trp1").className="notcolored";
+              document.getElementById("trp2").className="notcolored";
+              document.getElementById("trp3").className="notcolored";
+           document.getElementById("b1").className="bar";
+           document.getElementById("b2").className="bar";
+	   document.getElementById("h1").className="bar";
+           document.getElementById("h2").className="bar";
+           document.getElementById("h3").className="bar";
+	   document.getElementById("sc1").className="vbar";
+           document.getElementById("sc2").className="vbar";
+	   document.getElementById("t1").className="bar";
+           document.getElementById("t2").className="bar";
+	   document.getElementById("tr1").className="bar";
+           document.getElementById("tr2").className="bar";
+           document.getElementById("tr3").className="bar";
+              document.getElementById(s).className="colored";
+              document.getElementById(s1).className="cvbar";
+              break;
+      case 4: s="tp"+j;
+              s1="t"+j;
+              document.getElementById("bp1").className="notcolored";
+              document.getElementById("bp2").className="notcolored";
+              document.getElementById("hp1").className="notcolored";
+              document.getElementById("hp2").className="notcolored";
+              document.getElementById("hp3").className="notcolored";
+              document.getElementById("scp1").className="notcolored";
+              document.getElementById("scp2").className="notcolored";
+              document.getElementById("tp1").className="notcolored";
+              document.getElementById("tp2").className="notcolored";
+              document.getElementById("trp1").className="notcolored";
+              document.getElementById("trp2").className="notcolored";
+              document.getElementById("trp3").className="notcolored";
+              document.getElementById("b1").className="bar";
+           document.getElementById("b2").className="bar";
+	   document.getElementById("h1").className="bar";
+           document.getElementById("h2").className="bar";
+           document.getElementById("h3").className="bar";
+	   document.getElementById("sc1").className="bar";
+           document.getElementById("sc2").className="bar";
+	   document.getElementById("t1").className="vbar";
+           document.getElementById("t2").className="vbar";
+	   document.getElementById("tr1").className="bar";
+           document.getElementById("tr2").className="bar";
+           document.getElementById("tr3").className="bar";
+              document.getElementById(s).className="colored";
+              document.getElementById(s1).className="cvbar";
+              break;
+      case 5: s="trp"+j;
+              s1="tr"+j;
+              document.getElementById("bp1").className="notcolored";
+              document.getElementById("bp2").className="notcolored";
+              document.getElementById("hp1").className="notcolored";
+              document.getElementById("hp2").className="notcolored";
+              document.getElementById("hp3").className="notcolored";
+              document.getElementById("scp1").className="notcolored";
+              document.getElementById("scp2").className="notcolored";
+              document.getElementById("tp1").className="notcolored";
+              document.getElementById("tp2").className="notcolored";
+              document.getElementById("trp1").className="notcolored";
+              document.getElementById("trp2").className="notcolored";
+              document.getElementById("trp3").className="notcolored";
+           document.getElementById("b1").className="bar";
+           document.getElementById("b2").className="bar";
+	   document.getElementById("h1").className="bar";
+           document.getElementById("h2").className="bar";
+           document.getElementById("h3").className="bar";
+	   document.getElementById("sc1").className="bar";
+           document.getElementById("sc2").className="bar";
+	   document.getElementById("t1").className="bar";
+           document.getElementById("t2").className="bar";
+	   document.getElementById("tr1").className="vbar";
+           document.getElementById("tr2").className="vbar";
+           document.getElementById("tr3").className="vbar";
+              document.getElementById(s1).className="cvbar";
+              document.getElementById(s).className="colored";
+              break;
+   }
+      
+}
+function goup()
+{
+   j++;
+   if(i==1||i==3||i==4)
+   {
+      if(j>=3)
+      {
+         j=1;
+       }
+    }
+    else
+    {
+        if(j>=4)
+         {
+            j=1;
+         }
+    }
+  doit(i,j);
+} 
+function godown()
+{
+   j--;
+   if(i==1||i==3||i==4)
+   {
+      if(j==0)
+      {
+         j=2;
+       }
+    }
+    else
+    {
+        if(j==0)
+         {
+            j=3;
+         }
+    }
+  doit(i,j);
+}   
+
+function goright()
+{
+clearall();
+i++;
+ if(i==6)
+{i=1;
+}
+   large(i);             
+}
+function goleft()
+{
+clearall();
+  i--;
+ if(i==0)
+  { 
+     i=5;
+   }
+large(i);
+}
+function clearall()
+{
+              document.getElementById("bp2").className="notcolored";
+              document.getElementById("hp1").className="notcolored";
+              document.getElementById("hp2").className="notcolored";
+              document.getElementById("hp3").className="notcolored";
+              document.getElementById("scp1").className="notcolored";
+              document.getElementById("scp2").className="notcolored";
+              document.getElementById("tp1").className="notcolored";
+              document.getElementById("tp2").className="notcolored";
+              document.getElementById("trp1").className="notcolored";
+              document.getElementById("trp2").className="notcolored";
+              document.getElementById("trp3").className="notcolored";
+           document.getElementById("b1").className="bar";
+           document.getElementById("b2").className="bar";
+	   document.getElementById("h1").className="bar";
+           document.getElementById("h2").className="bar";
+           document.getElementById("h3").className="bar";
+	   document.getElementById("sc1").className="bar";
+           document.getElementById("sc2").className="bar";
+	   document.getElementById("t1").className="bar";
+           document.getElementById("t2").className="bar";
+	   document.getElementById("tr1").className="bar";
+           document.getElementById("tr2").className="bar";
+           document.getElementById("tr3").className="bar";
+        j=1;
+}
+v=20;
+w=200;
+x=380;
+y=380;
+z=200;
+up=1;
+function changeheight()
+{ 
+      if(up==1)
+      {
+      v=v+0.5;w=w-0.6;x=x+0.7;y=y-0.8;z=z+0.9;
+      document.getElementById("img1").style.top=v;
+      document.getElementById("img2").style.top=w;
+      document.getElementById("img3").style.top=x;
+      document.getElementById("img4").style.top=y;
+      document.getElementById("img5").style.top=z;
+            if(v==25)
+            {
+               up=0;
+            }
+      }
+      else
+      {
+           v=v-0.5;w=w+0.6;x=x-0.7;y=y+0.8;z=z-0.9;
+      document.getElementById("img1").style.top=v;
+      document.getElementById("img2").style.top=w;
+      document.getElementById("img3").style.top=x;
+      document.getElementById("img4").style.top=y;
+      document.getElementById("img5").style.top=z;
+            if(v==15)
+            {
+               up=1;
+            }
+      }
+   if(document.tick === undefined)
+document.tick = setInterval('changeheight()',40);
+}
+document.addEventListener('keydown',function (e)
+{
+   switch(e.keyCode)
+   {
+      case 39: goright();
+                break;
+      case 37: goleft();
+                break;
+      case 38:godown();
+                break;
+      case 40:goup()
+               break;
+   }
+},true);
+</script>
+</head>
+
+<body onload="changeheight()">
+ 
+
+<img id="img1" src="1.gif" height="150" width="150" style="opacity:0.4; position:absolute; top:20px; left:500px;" onmouseover="large(1)">
+<img id="im1" src="btext.gif" height="300" style="position:absolute; left:650px; top:50px;;" class="ntvisible">
+            					    		       
+
+<img id="im5" src="ttext.gif" height="300" style="position:absolute; top:190px; left:1px;" class="ntvisible">
+<img id="img5" src="5.gif" height="150" width="150" style="opacity:0.4; position:absolute; top:200px; left:150px;" onmouseover="large(5)">
+
+<img id="img2" src="2.gif" height="150" width="150" style="opacity:0.4; position:absolute; top:200px; left:850px;" onmouseover="large(2)">
+<img id="im2" src="htext.gif" height="150" style="position:absolute; top:200px; left:950px;" class="ntvisible">
+
+<img id="img4" src="4.gif" height="150" width="150" style="opacity:0.4; position:absolute; top:380px; left:400px;" onmouseover="large(4)">
+<img id="im4" src="temptext.gif" height="300" class="ntvisible" style="position:absolute; top:380px; left:215px;">
+
+
+<img id="img3" src="3.gif" height="150" width="150" style="opacity:0.4; position:absolute; top:380px; left:650px;" onmouseover="large(3)">
+<img id="im3" src="stext.gif" height="150" width="300" class="ntvisible" style="position:absolute; top:380px; left:800px;">
+
+
+
+<div id="b1" class="bar" style="position:absolute; top:240px;" onmouseover="doit(1,1)" onmouseout="btn('bp1','b1')"><pre><p id="bp1" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">        An Introduction</p></pre></div>
+<div id="b2" class="bar" style="position:absolute; top:297px;" onmouseover="doit(1,2)" onmouseout="btn('bp2','b2')"><pre><p id="bp2" style="position:absolute; top:-10px;" class="notcolored">              Gallery</p></pre></div>
+
+
+
+<div id="h1" class="bar" style="position:absolute; top:200px;" onmouseover="doit(2,1)" onmouseout="btn('hp1','h1')"><pre><p id="hp1" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">       Lord Krishna's Time</p></pre></div>
+<div id="h2" class="bar" style="position:absolute; top:257px;" onmouseover="doit(2,2)" onmouseout="btn('hp2','h2')"><pre><p id="hp2" style="position:absolute; top:-12px; font-size:21px;" class="notcolored">         Interim Period</p></pre></div>
+<div id="h3" class="bar" style="position:absolute; top:314px;" onmouseover="doit(2,3)" onmouseout="btn('hp3','h3')"><pre><p id="hp3" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">         Medieval Ages</p></pre></div>
+
+
+<div id="t1" class="bar" style="position:absolute; top:220px;" onmouseover="doit(4,1)" onmouseout="btn('tp1','t1')"><pre><p id="tp1" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">       Religious Heritage </p></pre></div>
+<div id="t2" class="bar" style="position:absolute; top:277px;" onmouseover="doit(4,2)" onmouseout="btn('tp2','t2')"><pre><p id="tp2" style="position:absolute; top:-10px;" class="notcolored">              Gallery</p></pre></div>
+
+
+<div id="sc1" class="bar" style="position:absolute; top:220px;" onmouseover="doit(3,1)" onmouseout="btn('scp1','sc1')"><pre><p id="scp1" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">        Social Initiatives </p></pre></div>
+<div id="sc2" class="bar" style="position:absolute; top:277px;" onmouseover="doit(3,2)" onmouseout="btn('scp2','sc2')"><pre><p id="scp2" style="position:absolute; top:-10px;" class="notcolored">              Gallery</p></pre></div>
+
+
+
+
+<div id="tr1" class="bar" style="position:absolute; top:200px;" onmouseover="doit(5,1)" onmouseout="btn('trp1','tr1')"><pre><p id="trp1" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">           Where To Stay</p></pre></div>
+<div id="tr2" class="bar" style="position:absolute; top:257px;" onmouseover="doit(5,2)" onmouseout="btn('trp2','tr2')"><pre><p id="trp2" style="position:absolute; top:-12px; font-size:21px;" class="notcolored">  Travelling To Vrindavan</p></pre></div>
+<div id="tr3" class="bar" style="position:absolute; top:314px;" onmouseover="doit(5,3)" onmouseout="btn('trp3','tr3')"><pre><p id="trp3" class="notcolored" style="position:absolute; top:-12px; font-size:21px;">       Transport Facilities</p></pre></div>
+
+
+</div>
+
+</body>

@@ -1,0 +1,115 @@
+<html>
+<head>
+
+<title>
+</title>
+<script language="Javascript">
+
+i=1;
+j=7;
+k=13;
+l=19;
+m=25;
+function goright()
+{
+i++;
+ if(i==6)
+{i=1;
+}
+   img1.src=i+".gif";
+  j++;
+  if(j==11)
+   {
+       j=6;
+    }
+  img2.src=j+".gif";
+k++;
+if(k==16)
+   {
+       k=11;
+    }
+  img3.src=k+".gif";
+l++;
+if(l==21)
+   {
+       l=16;
+    }
+  img4.src=l+".gif";
+m++;
+if(m==26)
+   {
+       m=21;
+    }
+  img5.src=m+".gif";
+        
+     
+}
+
+function goleft()
+{
+  i--;
+ if(i==0)
+  { 
+     i=5;
+   }
+   img1.src=i+".gif";
+
+  j--;
+ if(j==5)
+  { 
+     j=10;
+   }
+   img2.src=j+".gif";
+
+
+ k--;
+ if(k==10)
+  { 
+     k=15;
+   }
+   img3.src=k+".gif";
+
+
+
+l--;
+ if(l==15)
+  { 
+     l=20;
+   }
+   img4.src=l+".gif";
+
+m--;
+ if(m==20)
+  { 
+     m=25;
+   }
+   img5.src=m+".gif";
+
+}
+document.addEventListener('keydown',function (e)
+{
+   switch(e.keyCode)
+   {
+      case 39: goright();
+                break;
+      case 37: goleft();
+                break;
+   }
+},true);
+</script>
+</head>
+
+<body>
+<pre>
+
+		                           	   <img id="img1" src="1.gif">
+                		       <img id="img2" src="2.gif">                                       	  	    <img id="img5" src="3.gif">
+
+
+
+
+		   				<img id="img3" src="4.gif">                 <img id="img4" src="5.gif">
+
+
+</pre>
+</body>

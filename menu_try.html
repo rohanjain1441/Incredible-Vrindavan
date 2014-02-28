@@ -1,0 +1,72 @@
+<html>
+<head>
+<script language="javascript">
+h1=500,v1=0;
+h2=750,v2=0;
+h3=750,v3=100;
+h4=500,v4=0;
+h5=250,v5=0;
+h6=250,v6=0;
+var htemp;
+var vtemp;
+function change()
+{
+  htemp=h1;
+h1=h2;
+h2=h3;
+h3=h4;
+h4=h5;
+h5=h6;
+h6=htemp;
+
+vtemp=v1;
+v1=v2;
+v2=v3;
+v3=v4;
+v4=v5;
+v5=v6;
+v6=vtemp;
+   
+    
+a1.hpsace=h1;
+a1.vspace=v1;
+
+a2.hspace=h2;
+a2.vspace=v2;
+
+a3.hspace=h3;
+a3.vspace=v3;
+
+a4.hspace=h4;
+a4.vspace=v4;
+
+a5.hspace=h5;
+a5.vspace=v5;
+
+a6.hspace=h6;
+a6.vspace=v6;
+}
+</script>  
+
+</head>
+
+<body>
+<img id="a5" img src="temples.gif" hspace="500" vspace="100">
+<img id="a1" img src="Activities.gif" hspace="0" vspace="100">
+
+
+<img id="a2" img src="bhakt_poets.gif" hspace="500" vspace="100">
+
+
+
+
+<img id="a3" img src="History.gif" hspace="0" vspace="100">
+
+
+
+<img id="a6" img src="Geography.gif" hpace="250" vpace="0">
+
+<input type="button" value="NEXT" onClick="change()"></input>
+
+</body>
+</html>
